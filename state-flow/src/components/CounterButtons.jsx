@@ -4,12 +4,14 @@ import { Minus, Plus, RotateCcw } from "lucide-react";
 const CounterButtons = (props) => {
   const incrementCounter = () => {
     props.setCount(props.count + props.step);
+    props.setTotalClicks(props.totalClicks + 1);
   };
   const resetCounter = () => {
     props.setCount(0);
   };
   const decrementCounter = () => {
     props.setCount(props.count - props.step);
+    props.setTotalClicks(props.totalClicks - 1);
   };
   return (
     <div>

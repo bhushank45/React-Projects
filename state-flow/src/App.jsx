@@ -7,14 +7,20 @@ import Stats from "./components/Stats";
 const App = () => {
   const [count, setCount] = useState(0);
   const [step, setStep] = useState(1);
-  const [totolClicks, setTotolClicks] = useState(0);
+  const [totalClicks, setTotalClicks] = useState(0);
 
   return (
     <div>
       <Counter count={count} />
-      <CounterButtons setCount={setCount} count={count} step={step} />
+      <CounterButtons
+        setCount={setCount}
+        count={count}
+        step={step}
+        totalClicks={totalClicks}
+        setTotalClicks={setTotalClicks}
+      />
       <StepControl setStep={setStep} step={step} />
-      <Stats totolClicks={totolClicks} count={count} />
+      <Stats totolClicks={totalClicks} count={count} />
     </div>
   );
 };
