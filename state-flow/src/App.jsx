@@ -10,17 +10,19 @@ const App = () => {
   const [totalClicks, setTotalClicks] = useState(0);
 
   return (
-    <div>
-      <Counter count={count} />
-      <CounterButtons
-        setCount={setCount}
-        count={count}
-        step={step}
-        totalClicks={totalClicks}
-        setTotalClicks={setTotalClicks}
-      />
-      <StepControl setStep={setStep} step={step} />
-      <Stats totolClicks={totalClicks} count={count} />
+    <div className="min-h-screen bg-slate-950 text-white p-6">
+      <div className="max-w-5xl mx-auto">
+        <Counter count={count} />
+        <CounterButtons
+          setCount={setCount}
+          count={count}
+          step={step}
+          totalClicks={totalClicks}
+          setTotalClicks={setTotalClicks}
+        />
+        <StepControl setStep={setStep} step={step} />
+        <Stats totolClicks={totalClicks} count={count} />
+      </div>
     </div>
   );
 };
