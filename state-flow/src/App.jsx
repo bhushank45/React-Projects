@@ -28,7 +28,7 @@ const App = () => {
           setTotalClicks={setTotalClicks}
         />
         <StepControl setStep={setStep} step={step} />
-        <Stats totolClicks={totalClicks} count={count} />
+        <Stats totalClicks={totalClicks} count={count} />
       </div>
     </div>
   );
