@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Counter = () => {
+const Counter = (props) =>{
   return (
-    <div>Counter</div>
+    <div>
+        {props.count}
+    </div>
   )
 }
 
