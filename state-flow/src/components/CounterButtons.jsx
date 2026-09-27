@@ -11,28 +11,37 @@ const CounterButtons = (props) => {
   };
   const decrementCounter = () => {
     props.setCount(props.count - props.step);
-    props.setTotalClicks(props.totalClicks - 1);
+    props.setTotalClicks(props.totalClicks + 1);
   };
   return (
-    <div>
-      <div>
-        <button onClick={decrementCounter}>
-          <Minus />
+    <div className="flex gap-8 mb-6">
+      <div className="flex-1 text-center ">
+        <button
+          onClick={decrementCounter}
+          className="w-full h-20 bg-red-400 rounded-2xl flex items-center justify-center hover:scale-105 transition-transform duration-200"
+        >
+          <Minus size={32} />
         </button>
-        <p>decrease</p>
+        <p className="text-slate-400 mt-3">Decrease</p>
       </div>
 
-      <div>
-        <button onClick={resetCounter}>
-          <RotateCcw />
+      <div className="flex-1 text-center">
+        <button
+          onClick={resetCounter}
+          className="w-full h-20 bg-slate-800 border border-slate-700 rounded-2xl flex items-center justify-center hover:bg-slate-700 transition-colors duration-200"
+        >
+          <RotateCcw size={28} />
         </button>
-        <p>Reset to 0</p>
+        <p className="text-slate-400 mt-3">Reset to 0</p>
       </div>
-      <div>
-        <button onClick={incrementCounter}>
-          <Plus />
+      <div className="flex-1 text-center ">
+        <button
+          onClick={incrementCounter}
+          className="w-full h-20 bg-purple-500 rounded-2xl flex items-center justify-center hover:scale-105 transition-transform duration-200"
+        >
+          <Plus width={32} />
         </button>
-        <p>Increase</p>
+        <p className="text-slate-400 mt-3">Increase</p>
       </div>
     </div>
   );
