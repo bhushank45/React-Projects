@@ -1,0 +1,123 @@
+const jobs = [
+  {
+    id: 1,
+    company: "Google",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg",
+    posted: "5 days ago",
+    role: "Senior UI/UX Designer",
+    tag1: "Full-Time",
+    tag2: "Senior Level",
+    rate: "$120/hr",
+    location: "Mumbai, India",
+  },
+
+  {
+    id: 2,
+    company: "Microsoft",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
+    posted: "1 week ago",
+    role: "Full Stack Developer",
+    tag1: "Full-Time",
+    tag2: "Senior Level",
+    rate: "$110/hr",
+    location: "Bangalore, India",
+  },
+
+  {
+    id: 3,
+    company: "Amazon",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+    posted: "3 days ago",
+    role: "Frontend Developer",
+    tag1: "Remote",
+    tag2: "Entry Level",
+    rate: "$85/hr",
+    location: "Hyderabad, India",
+  },
+
+  {
+    id: 4,
+    company: "Apple",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+    posted: "2 weeks ago",
+    role: "Product Designer",
+    tag1: "Full-Time",
+    tag2: "Senior Level",
+    rate: "$130/hr",
+    location: "Bangalore, India",
+  },
+
+  {
+    id: 5,
+    company: "Meta",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+    posted: "4 days ago",
+    role: "React Developer",
+    tag1: "Remote",
+    tag2: "Mid Level",
+    rate: "$100/hr",
+    location: "Pune, India",
+  },
+
+  {
+    id: 6,
+    company: "Netflix",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+    posted: "1 week ago",
+    role: "Graphic Designer",
+    tag1: "Part-Time",
+    tag2: "Entry Level",
+    rate: "$70/hr",
+    location: "Mumbai, India",
+  },
+
+  {
+    id: 7,
+    company: "Adobe",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Adobe_Corporate_logo.svg",
+    posted: "6 days ago",
+    role: "UI/UX Designer",
+    tag1: "Contract",
+    tag2: "Mid Level",
+    rate: "$90/hr",
+    location: "Noida, India",
+  },
+
+  {
+    id: 8,
+    company: "TCS",
+    logo: "https://cdn.simpleicons.org/tcs",
+    posted: "2 days ago",
+    role: "Java Developer",
+    tag1: "Full-Time",
+    tag2: "Entry Level",
+    rate: "$55/hr",
+    location: "Mumbai, India",
+  },
+
+  {
+    id: 9,
+    company: "Infosys",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg",
+    posted: "3 weeks ago",
+    role: "Python Developer",
+    tag1: "Full-Time",
+    tag2: "Mid Level",
+    rate: "$60/hr",
+    location: "Pune, India",
+  },
+
+  {
+    id: 10,
+    company: "Wipro",
+    logo: "https://cdn.simpleicons.org/wipro",
+    posted: "5 days ago",
+    role: "Software Engineer",
+    tag1: "Remote",
+    tag2: "Entry Level",
+    rate: "$50/hr",
+    location: "Bangalore, India",
+  },
+];
+
+export default jobs;
