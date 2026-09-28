@@ -8,14 +8,20 @@ const App = () => {
     {
       name: "Headphones",
       price: 18000,
+      image:
+        "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGVhZHBob25lJTIwcG5nfGVufDB8fDB8fHww",
     },
     {
       name: "Keyboard",
       price: 2500,
+      image:
+        "https://images.unsplash.com/photo-1632079003110-d694908500da?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGtleWJvYXJkfGVufDB8fDB8fHww",
     },
     {
       name: "Mouse",
       price: 800,
+      image:
+        "https://images.unsplash.com/photo-1755373255602-c030aac3bc69?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1vdXNlJTIwZ2FtaW5nfGVufDB8fDB8fHww",
     },
   ];
 
@@ -61,7 +67,7 @@ const App = () => {
           />
         );
       })}
-      <CartSummary totalItems={totalItems} totalPrice={totalPrice}/>
+      <CartSummary totalItems={totalItems} totalPrice={totalPrice} />
     </div>
   );
 };
