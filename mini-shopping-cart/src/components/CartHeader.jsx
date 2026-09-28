@@ -4,7 +4,7 @@ const CartHeader = (props) => {
   return (
     <div className="flex px-10 py-7 justify-between bg-gray-700 text-white">
       <h2 className="flex items-center gap-3 text-3xl font-bold">
-        <ShoppingCart size={34} /> Mini Shpping Cart
+        <ShoppingCart size={34} className="btn" /> Mini Shpping Cart
       </h2>
       <div className="relative">
         <span>
