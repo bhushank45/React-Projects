@@ -40,19 +40,19 @@ const App = () => {
   };
   return (
     <div>
+      <div>
+        <CartHeader totalItems={totalItems}/>
+      </div>
       {products.map((product, idx) => {
         return (
-          <div>
-            <CartHeader />
-            <ProductCard
-              key={idx}
-              name={product.name}
-              price={product.price}
-              quantity={quantities[product.name]}
-              increaseQuantity={increaseQuantity}
-              decreaseQuantity={decreaseQuantity}
-            />
-          </div>
+          <ProductCard
+            key={idx}
+            name={product.name}
+            price={product.price}
+            quantity={quantities[product.name]}
+            increaseQuantity={increaseQuantity}
+            decreaseQuantity={decreaseQuantity}
+          />
         );
       })}
     </div>
