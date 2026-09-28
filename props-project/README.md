@@ -2,6 +2,10 @@
 
 A small React application that displays job listings as reusable cards. It demonstrates passing data to a component through props: `App` iterates over the jobs dataset and passes each listing to `Card` through its `job` prop.
 
+## Live Demo
+
+[View the live app](https://react-basic-props-project.vercel.app/)
+
 ## Requirements
 
 - Node.js 20.19+ or 22.12+
