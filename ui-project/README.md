@@ -2,6 +2,10 @@
 
 A React UI project for a digital banking platform's target-audience section. It presents audience messaging in horizontally scrollable image cards and demonstrates **props drilling**: data is passed through several components to reach the component that renders it.
 
+## Live Demo
+
+[View the live app](https://ui-project-zeta.vercel.app/)
+
 ## Screenshot
 
 ![Target Audience UI screenshot](src/assets/screenshot.png)
