@@ -2,6 +2,10 @@
 
 A simple React shopping cart for browsing tech products, changing item quantities, and viewing the cart's item count and total price.
 
+## Live Demo
+
+[Open the Mini Shopping Cart](https://bk-react-mini-shopping-cart.vercel.app/)
+
 ## Screenshot
 
 ![Mini Shopping Cart screenshot](src/assets/screenshot.png)
