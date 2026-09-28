@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ProductCard from "./components/ProductCard";
 import CartHeader from "./components/CartHeader";
+import CartSummary from "./components/CartSummary";
 
 const App = () => {
   const products = [
@@ -28,6 +29,10 @@ const App = () => {
     return total + quantity;
   }, 0);
 
+  const totalPrice = products.reduce((total, product) => {
+    return total + product.price * quantities[product.name];
+  }, 0);
+
   const increaseQuantity = (product) => {
     setQuantities({ ...quantities, [product]: quantities[product] + 1 });
   };
@@ -41,7 +46,8 @@ const App = () => {
   return (
     <div>
       <div>
-        <CartHeader totalItems={totalItems}/>
+        <CartHeader totalItems={totalItems} />
+        <h2>{totalPrice}</h2>
       </div>
       {products.map((product, idx) => {
         return (
@@ -55,6 +61,7 @@ const App = () => {
           />
         );
       })}
+      <CartSummary totalItems={totalItems} totalPrice={totalPrice}/>
     </div>
   );
 };
