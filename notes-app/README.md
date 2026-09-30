@@ -1,16 +1,56 @@
-# React + Vite
+# Notes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A lightweight notes app built with React. Add a note with a heading and details, view your notes as sticky-note cards, and remove notes when they are no longer needed.
 
-Currently, two official plugins are available:
+**Live demo:** [bk-notes-app-react.vercel.app](https://bk-notes-app-react.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Notes App screenshot](src/assets/screenshot.png)
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Create notes with a title and written details.
+- Browse notes in the Recent Notes area.
+- Delete individual notes.
+- Responsive split-panel layout on larger screens.
 
-## Expanding the Oxlint configuration
+> Notes are stored in React component state only. They are cleared when the page is refreshed; this version does not use browser storage or a backend.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Getting Started
+
+You will need [Node.js](https://nodejs.org/) and npm installed.
+
+1. Clone this repository and open the `notes-app` directory:
+
+   ```bash
+   cd notes-app
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+   Open the local URL printed in the terminal.
+
+## Available Scripts
+
+| Command           | Description                           |
+| ----------------- | ------------------------------------- |
+| `npm run dev`     | Start the Vite development server.    |
+| `npm run build`   | Create a production build in `dist/`. |
+| `npm run preview` | Preview the production build locally. |
+| `npm run lint`    | Run Oxlint.                           |
+
+## Tech Stack
+
+- React 19
+- Vite
+- Tailwind CSS 4
+- Oxlint
