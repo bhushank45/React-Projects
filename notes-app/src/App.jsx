@@ -4,13 +4,29 @@ const App = () => {
   const [title, setTitle] = useState("");
   const [details, setDetails] = useState("");
   const [notes, setNotes] = useState([]);
+  const [editIndex, setEditIndex] = useState(null);
+
+  const editNote = (idx) => {
+    setTitle(notes[idx].title);
+    setDetails(notes[idx].details);
+    setEditIndex(idx);
+  };
 
   const submitHandler = (e) => {
     e.preventDefault();
 
-    const copyNotes = [...notes];
-    copyNotes.push({ title, details });
-    setNotes(copyNotes);
+    if (editIndex !== null) {
+      const copyNotes = [...notes];
+
+      copyNotes[editIndex] = { title, details };
+
+      setNotes(copyNotes);
+      setEditIndex(null);
+    } else {
+      const copyNotes = [...notes];
+      copyNotes.push({ title, details });
+      setNotes(copyNotes);
+    }
 
     setDetails("");
     setTitle("");
@@ -50,8 +66,9 @@ const App = () => {
           }}
           className="px-5 py-2 w-full font-medium  h-20 border-2 rounded outline-none"
         />
+
         <button className="w-full bg-white active:scale-95 font-medium text-black rounded px-5 py-2">
-          Add Note
+          {editIndex !== null ? "Update Note" : "Add Note"}
         </button>
       </form>
       <div className="p-10 lg:w-1/2 lg:border-l">
@@ -71,14 +88,24 @@ const App = () => {
                     {note.details}
                   </p>
                 </div>
-                <button
-                  onClick={() => {
-                    deleteNote(idx);
-                  }}
-                  className="rounded text-white font-bold w-full text-xs py-1 bg-red-500 cursor-pointer active:scale-95"
-                >
-                  Delete
-                </button>
+
+                <div className="flex gap-2 w-full">
+                  <button
+                    type="button"
+                    onClick={() => editNote(idx)}
+                    className="rounded text-white font-bold flex-1 text-xs py-1 bg-blue-500 cursor-pointer active:scale-95"
+                  >
+                    Edit
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => deleteNote(idx)}
+                    className="rounded text-white font-bold flex-1 text-xs py-1 bg-red-500 cursor-pointer active:scale-95"
+                  >
+                    Delete
+                  </button>
+                </div>
               </div>
             );
           })}
