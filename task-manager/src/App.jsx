@@ -1,14 +1,9 @@
-import React from 'react'
+import Navbar from "./componets/Navbar";
 
 const App = () => {
   return (
     <div>
-      <nav>
-        <div>
-          <div></div>
-          <div>TaskFlow</div>
-        </div>
-      </nav>
+      <Navbar/>
     </div>
   );
 }
