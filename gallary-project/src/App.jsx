@@ -73,8 +73,8 @@ const App = () => {
       <div className="mt-auto flex justify-center gap-3 pb-8">
         <button
           type="button"
-          onClick={() => setPage(page - 1)}
-          className="rounded-lg bg-purple-600 px-4 py-2 text-white"
+          onClick={() => page > 1 && setPage(page - 1)}
+          className="rounded-lg bg-purple-600 px-4 py-2 text-white active:scale-95 cursor-pointer"
         >
           Prev
         </button>
@@ -82,7 +82,7 @@ const App = () => {
         <button
           type="button"
           onClick={() => setPage(page + 1)}
-          className="rounded-lg bg-purple-600 px-4 py-2 text-white"
+          className="rounded-lg bg-purple-600 px-4 py-2 text-white active:scale-95 cursor-pointer"
         >
           Next
         </button>
